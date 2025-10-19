@@ -1,28 +1,20 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trình theo dõi kế hoạch</title>
-  <style>
-    body {
-      background-color: #111;
-      color: #eee;
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
-    input, button {
-      margin: 5px;
-      padding: 8px;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <title>My Plan Tracking</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Xin chào! Đây là web theo dõi kế hoạch của bạn 🧭</h1>
-  <p>Trang này được lưu trên GitHub Pages.</p>
+  <h1>📅 Trình theo dõi kế hoạch</h1>
+
+  <form id="planForm">
+    <input type="text" id="task" placeholder="Nhập công việc..." required />
+    <button type="submit">Lưu</button>
+  </form>
+
+  <ul id="taskList"></ul>
+
+  <script src="script.js"></script>
 </body>
 </html>
